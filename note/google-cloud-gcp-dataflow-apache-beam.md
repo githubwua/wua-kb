@@ -2,7 +2,12 @@
 
 # Template
 
-## How to launch/execute a Dataflow template deployed on Google Cloud Storage (GCS)
+## How to start/launch/execute a Dataflow template deployed on Google Cloud Storage (GCS)
+
+Templates are staged on Google Cloud Storage.  Staged templates can be executed using the gcloud CLI tool.
+The runtime parameters required by the template can be passed in the parameters field via comma-separated list of paramName=Value.
+
+e.g.
 
 ```
 export JOB=my-export-job  # A name for the job. Not unique.  A unique job ID will be generated for each launch.
@@ -17,7 +22,12 @@ gcloud dataflow jobs run $JOB \
   --parameters="instanceId=test-instance,databaseId=example-db,outputDir=gs://$GCS_BUCKET/output/,shouldExportTimestampAsLogicalType=true"
 ```
 
-## How to deploy a template to Google Cloud Storage
+## How to build/deploy/stage/upload a template to Google Cloud Storage
+
+Use Maven to build and stage the template file on Google Cloud Storage.
+Note: Any parameters passed at template build time will not be able to be overwritten at execution time.
+
+e.g.
 
 ```
 mvn compile exec:java \
