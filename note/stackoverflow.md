@@ -46,8 +46,8 @@ public class SpaceShip extends Vehicle {
 }
 
 SpaceShip falcon = new SpaceShip();
-// The following falcon.accelerate() will end up falcon.accelerate() again based on the definition above.
-// Every call generates another new call, resulting in an infinite loop.
+// The following falcon.accelerate() will end up calling falcon.accelerate() again based on the definition above.
+// Every call generates another new call to itself, resulting in an infinite loop.
 falcon.accelerate();
 
 ```
