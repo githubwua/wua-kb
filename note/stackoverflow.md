@@ -8,9 +8,9 @@ This sequence of instruction and data is stored in the stack.
 
 The stack is part of the OS memory, and is limited in size.  e.g. 1GB
 
-We can look at something called a stack trace to get a sense of the stack looks like.
+We can look at something called a stack trace to get a sense of what the stack looks like.
 
-This link contains a few stack trace examples: https://developer.android.com/studio/debug/stacktraces
+For example, this link contains a few stack trace examples: https://developer.android.com/studio/debug/stacktraces
 
 # What is a stack overflow?
 
@@ -46,7 +46,9 @@ public class SpaceShip extends Vehicle {
 }
 
 SpaceShip falcon = new SpaceShip();
-falcon.accelerate();  // falcon.accelerate() calls falcon.accelerate().  Every call generates another new call, resulting in an infinite loop.
+// The following falcon.accelerate() will end up falcon.accelerate() again based on the definition above.
+// Every call generates another new call, resulting in an infinite loop.
+falcon.accelerate();
 
 ```
 
@@ -54,9 +56,12 @@ falcon.accelerate();  // falcon.accelerate() calls falcon.accelerate().  Every c
 
 Method A is defined to call method B, and method B is defined to call method A.
 When method A is executed, method A and method B will end up calling each other repeatedly.
-This is like two mirrors looking at each other.  Or a perfect tennis rally that never ends.
+This is like two mirrors facing and looking at each other (i.e. [infinite reflection](https://www.google.com/search?q=mirror+infinite+reflection&tbm=isch)) or two players doing an endless ping pong rally.  ヽ(^o^)ρ┳┻┳°σ(^o^)/ 
 
-Here is a real-life example:
+# Real-life Examples
 
 https://bugs.openjdk.java.net/browse/JDK-8214129
 
+# Reference
+
+[java.lang.StackOverflowError – How to solve StackOverflowError](https://www.youtube.com/watch?v=kYAyEQEcTVI)
