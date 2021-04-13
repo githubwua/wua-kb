@@ -23,8 +23,8 @@ When it is full and a new execution is added to the stack, it results in an over
 ## A method repeatedly calling itself infinitely.
 
 In this example, when an instance of SpaceShip calls its accelerate(), accelerate() will call its own accelerate().
-This results in this.accelerate() calls this.accelerate() repeatedly, resulting in an endless loop.
-The stack will fill up with a long history of repeated this.accelerate()
+This results in this.accelerate() calling this.accelerate() repeatedly, resulting in an endless loop.
+The stack will be filled up with a long trace of repeated this.accelerate() calls very quickly.
 
 ```
 // Source: https://stackoverflow.com/questions/3197708/what-causes-a-java-lang-stackoverflowerror
@@ -54,13 +54,15 @@ falcon.accelerate();
 
 ## Circular Reference
 
-Method A is defined to call method B, and method B is defined to call method A.
+Like Ying and Yang, complementing each other infinitely in a circle.
+
+Let's say method A is defined to call method B, and method B is defined to call method A.
 When method A is executed, method A and method B will end up calling each other repeatedly.
 This is like two mirrors facing and looking at each other (i.e. [infinite reflection](https://www.google.com/search?q=mirror+infinite+reflection&tbm=isch)) or two players doing an endless ping pong rally.  ヽ(^o^)ρ┳┻┳°σ(^o^)/ 
 
 # Real-life Examples
 
-https://bugs.openjdk.java.net/browse/JDK-8214129
+- [A real stackoverflow bug in JDK](https://bugs.openjdk.java.net/browse/JDK-8214129)
 
 # Reference
 
