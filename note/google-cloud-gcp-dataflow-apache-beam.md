@@ -1,4 +1,10 @@
+# Google I/O Connectors
 
+- Java: [org.apache.beam.sdk.io.gcp.bigquery.*](https://github.com/apache/beam/tree/master/sdks/java/io/google-cloud-platform/src/main/java/org/apache/beam/sdk/io/gcp/)
+- Python: [apache_beam.io.gcp.*](https://github.com/apache/beam/tree/master/sdks/python/apache_beam/io/gcp)
+
+
+- [BigQueryIO](https://beam.apache.org/documentation/io/built-in/google-bigquery/)
 
 # Template
 
@@ -116,6 +122,8 @@ $ gsutil ls -l gs://dataflow-templates/latest/
 TOTAL: 60 objects, 12495494 bytes (11.92 MiB)
 ```
 
+Sample Template Content:
+https://storage.googleapis.com/dataflow-templates/latest/GCS_Avro_to_Cloud_Bigtable
 
 # #deadletterqueue split tee
 
