@@ -1,3 +1,10 @@
+# Pipeline Options
+
+https://beam.apache.org/releases/javadoc/2.27.0/index.html?org/apache/beam/sdk/options/PipelineOptions.html
+https://github.com/apache/beam/blob/master/runners/google-cloud-dataflow-java/src/main/java/org/apache/beam/runners/dataflow/options/DataflowPipelineOptions.java#L143
+
+TODO: add sample code snippets
+
 # Google I/O Connectors
 
 - Java: [org.apache.beam.sdk.io.gcp.bigquery.*](https://github.com/apache/beam/tree/master/sdks/java/io/google-cloud-platform/src/main/java/org/apache/beam/sdk/io/gcp/)
