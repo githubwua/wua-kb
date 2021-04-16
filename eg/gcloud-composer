@@ -1,0 +1,9 @@
+
+export CLUSTER=[Composer Cluster Name]
+export LOCATION=[e.g. europe-west2, asia-northeast1]
+
+# Update config in [airflow.cfg](https://github.com/apache/airflow/master/airflow/config_templates/default_airflow.cfg)
+gcloud composer environments update $CLUSTER --location $LOCATION --update-airflow-configs=webserver-default_ui_timezone=Europe/Istanbul,core-default_timezone=Europe/Istanbul
+
+# Restart web server
+gcloud beta composer environments restart-web-server $CLUSTER --location=$LOCATION
