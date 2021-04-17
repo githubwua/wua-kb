@@ -1,9 +1,15 @@
-
+# Parameters
 export CLUSTER=[Composer Cluster Name]
 export LOCATION=[e.g. europe-west2, asia-northeast1]
 
-# Update config in [airflow.cfg](https://github.com/apache/airflow/blob/master/airflow/config_templates/default_airflow.cfg)
+# Airflow Configuration Override (i.e. update [airflow.cfg](https://github.com/apache/airflow/blob/master/airflow/config_templates/default_airflow.cfg)
 gcloud composer environments update $CLUSTER --location $LOCATION --update-airflow-configs=webserver-default_ui_timezone=Europe/Istanbul,core-default_timezone=Europe/Istanbul
+(config syntax: $section-$name=$value)
+
+# Enable RBAC UI
+gcloud composer environments update $CLUSTER --location $LOCATION --update-airflow-configs=webserver-rbac=true
 
 # Restart web server
 gcloud beta composer environments restart-web-server $CLUSTER --location=$LOCATION
+
+
