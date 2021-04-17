@@ -1,0 +1,17 @@
+# #java
+target/
+.idea/
+.gradle/
+.class
+.iml
+
+# #python
+.pyc
+
+# #jupyter checkpoint files
+.ipynb_checkpoints/
+
+# Ignore dotfiles except for .gitignore (i.e. this file)
+.*
+!.gitignore
+
