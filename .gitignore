@@ -2,8 +2,8 @@
 target/
 .idea/
 .gradle/
-.class
-.iml
+*.class
+*.iml
 
 # #python
 .pyc
