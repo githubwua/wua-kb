@@ -2,8 +2,8 @@
 
 Why KB?
 
-- Reduce re-invention (don't search for the same info again and again)
-- Reuse something that works
+- Reduce re-invention (don't search for the same info again and again); keep everything in one place
+- Reuse something that works; repeat the success
 - Recycle outdated knowledge
 
 Folder structure:
@@ -18,3 +18,4 @@ blog - putting ideas together
 
 This README is also a scratch pad for new draft notes.
 
+Note file format: `id[tag1 tag2 ... tag-n](title).ext`
