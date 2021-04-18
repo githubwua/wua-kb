@@ -1,7 +1,7 @@
 
 # Compile AND Run
 
-Compile a .java file into a .class file and run the .class file
+Compile **all** .java files and execute main() in the specified class
 
 ```
 mvn compile exec:java -Dexec.mainClass=howto.App
@@ -9,12 +9,12 @@ mvn compile exec:java -Dexec.mainClass=howto.App
 
 # Run a compiled class
 
-If the file has already been compiled, we can skip compile and simply run the .class file
+If all the files are already compiled, we can skip `compile` and execute the main class directly.
 ```
 mvn exec:java -Dexec.mainClass=howto.App
 ```
 
-# What are the files stored?
+# Directory Structure
 
 ```
 $ tree src
