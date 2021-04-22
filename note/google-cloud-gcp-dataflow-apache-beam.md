@@ -5,6 +5,14 @@ https://github.com/apache/beam/blob/master/runners/google-cloud-dataflow-java/sr
 
 TODO: add sample code snippets
 
+```
+
+
+```
+
+See [cmd]
+
+
 # Google I/O Connectors
 
 - Java: [org.apache.beam.sdk.io.gcp.bigquery.*](https://github.com/apache/beam/tree/master/sdks/java/io/google-cloud-platform/src/main/java/org/apache/beam/sdk/io/gcp/)
@@ -136,14 +144,6 @@ https://storage.googleapis.com/dataflow-templates/latest/GCS_Avro_to_Cloud_Bigta
 
 - [Guide to common Cloud Dataflow use-case patterns, Part 1 | Google Cloud Blog]
 
-# #troubleshooting
-
-#oom #memory
-https://cloud.google.com/community/tutorials/dataflow-debug-oom-conditions
-
-# #monitoring
-
-https://cloud.google.com/dataflow/docs/guides/using-cloud-monitoring#receive_worker_vm_metrics_from_the_agent
 
 # #reference
 
@@ -152,3 +152,4 @@ https://cloud.google.com/dataflow/docs/guides/using-cloud-monitoring#receive_wor
 - [Guide to common Cloud Dataflow use-case patterns, Part 1 | Google Cloud Blog]:
 https://cloud.google.com/blog/products/data-analytics/guide-to-common-cloud-dataflow-use-case-patterns-part-1
 
+[cmd]: https://raw.githubusercontent.com/githubwua/wua-kb/main/cmd/dataflow
