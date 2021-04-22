@@ -136,6 +136,14 @@ https://storage.googleapis.com/dataflow-templates/latest/GCS_Avro_to_Cloud_Bigta
 
 - [Guide to common Cloud Dataflow use-case patterns, Part 1 | Google Cloud Blog]
 
+# #troubleshooting
+
+#oom #memory
+https://cloud.google.com/community/tutorials/dataflow-debug-oom-conditions
+
+# #monitoring
+
+https://cloud.google.com/dataflow/docs/guides/using-cloud-monitoring#receive_worker_vm_metrics_from_the_agent
 
 # #reference
 
