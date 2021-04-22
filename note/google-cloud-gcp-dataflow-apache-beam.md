@@ -1,3 +1,5 @@
+Word Count Example Explained: https://beam.apache.org/get-started/wordcount-example/
+
 # Pipeline Options
 
 https://beam.apache.org/releases/javadoc/2.27.0/index.html?org/apache/beam/sdk/options/PipelineOptions.html
@@ -66,7 +68,7 @@ mvn compile exec:java \
 ```
 
 Ref: 
-- [Source Code](https://github.com/GoogleCloudPlatform/DataflowTemplates/)
+- [Google Template Source Code](https://github.com/GoogleCloudPlatform/DataflowTemplates/)
 - [Get started with Google-provided templates  |  Cloud Dataflow](https://cloud.google.com/dataflow/docs/guides/templates/provided-templates)
 
 ## Google Dataflow Template Repository on GCS
