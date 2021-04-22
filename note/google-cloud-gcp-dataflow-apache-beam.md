@@ -12,6 +12,9 @@ TODO: add sample code snippets
 
 See [cmd]
 
+# #config
+
+[pom.xml]
 
 # Google I/O Connectors
 
@@ -153,3 +156,4 @@ https://storage.googleapis.com/dataflow-templates/latest/GCS_Avro_to_Cloud_Bigta
 https://cloud.google.com/blog/products/data-analytics/guide-to-common-cloud-dataflow-use-case-patterns-part-1
 
 [cmd]: https://raw.githubusercontent.com/githubwua/wua-kb/main/cmd/dataflow
+[pom.xml]: https://github.com/githubwua/wua-kb/blob/main/config/dataflow-pom.xml
