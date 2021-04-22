@@ -1,5 +1,10 @@
 Word Count Example Explained: https://beam.apache.org/get-started/wordcount-example/
 
+# Sample Code Example
+
+[Example Source Code](https://github.com/apache/beam/blob/master/examples/)
+[Beam Katas](https://github.com/apache/beam/tree/master/learning/katas)
+
 # Pipeline Options
 
 https://beam.apache.org/releases/javadoc/2.27.0/index.html?org/apache/beam/sdk/options/PipelineOptions.html
