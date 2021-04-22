@@ -34,10 +34,14 @@ curl \
 curl -H "Authorization: Bearer $(gcloud auth print-access-token)" -H "Content-Type: application/json" https://$DATA_FUSION_API_NAME/v1beta1/projects/$PROJECT/locations/$LOCATION/instances?instanceId=instance_id -X POST -d '{"description": "Private CDF instance created through REST.", "type": "ENTERPRISE", "privateInstance": true, "networkConfig": {"network": "projects/shared_vpc_host_project_id/global/networks/network", "ipAllocation": "ip_range"}}'
 
 ```
+# #plugin
+
+Source Code: https://github.com/data-integrations/google-cloud
 
 # #faq
 
 ## How do we set up a private IP network?
 
 See: https://cloud.google.com/data-fusion/docs/how-to/create-private-ip?hl=en#create_a_private_instance_in_a_shared_network
+
 
