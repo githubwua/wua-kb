@@ -1,0 +1,13 @@
+
+# Parameter
+PIPELINE_MAIN_CLASS=com.example.MyPipelineMainClass  # What is the target main class?
+
+# #pipeline
+
+# List Pipeline Options:
+mvn exec:java -Dexec.mainClass=$PIPELINE_MAIN_CLASS -Dexec.args="--help"
+
+# View Pipeline Options:
+mvn exec:java -Dexec.mainClass=$PIPELINE_MAIN_CLASS -Dexec.args="--help=RunOptions"
+
+# Apply Pipeline Options
