@@ -9,7 +9,7 @@ Why KB?
 Folder structure:
 
 ```
-note - individual notes
+note - individual notes (Migrated to Notion)
 code - sample code (for code syntax, basic howto)
 config - config files
 cmd - one-pager cheatsheet on how to run a command
